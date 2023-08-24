@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title>Python File Creator</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    #textArea {
+        width: 78%;
+        height: 438px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #4f1df5;
+        font-size: 16px;
+        resize: none;
+        color: tomato;
+        font-size: larger;
+        font-weight: 900;
+        font-family: monospace;
+        text-shadow: 0 1px rgba(0, 0, 0, .3);
+        font-size: 1.5em;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        line-height: 1.5;
+    }
+
+    button {
+        background-color: #1c3166;
+        border: none;
+        color: white;
+        padding: 13px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 1px 2px;
+        cursor: pointer;
+    }
+    input {
+        background-color: #1c3166;
+        border: none;
+        color: white;
+        padding: 13px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 1px 2px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <h1>Python File Creator</h1>
+
+
+    <form action="{{ url_for('create_python_file') }}" method="post">
+
+    <center><textarea name="code" rows="20" cols="100" spellcheck="false" font-size="0.8rem" id="textArea"></textarea>
+    </center><br>
+   <!-- <center><input type="submit" value="compile"></center> -->
+
+      <form action = "{{ url_for('create_python_file') }}" method = "POST">
+         <select name = "opts">
+            <option value = "a">Option A</option>
+            <option value = "b">Option B</option>
+            <option value = "c">Option C</option>
+         </select>
+         <input type = 'submit'/>
+      </form>
+
+
+   <center><button onclick="myFunction()">COMPILE</button></center>
+<div id="placeholder">
+
+
+<textarea id="myTextarea" placeholder =<p>{{text}}</p>{{gptresponce}}
+
+
+
+
+
+</textarea>
+</div>
+<script>
+function myFunction() {
+  alert("COMPILING!!");
+}
+</script>
+
+
+</form>
+</body>
+
+</html>

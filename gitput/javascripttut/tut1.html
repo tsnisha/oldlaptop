@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- variables in js -->
+
+<body>
+    <script>
+        var a, b;
+        a = 30;
+        b = 5;
+        c = a + b;
+        document.write(c);
+        var nameTanisha = "good";
+        document.write(nameTanisha);
+    </script>
+    <h1>Variables</h1>
+    <p>In this example, x, y, and z are variables.</p>
+    <p id="demo"></p>
+    <script>
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        document.getElementById("demo").innerHTML =
+            "The value of z is: " + z;
+    </script>
+    <script>
+        var x = 3;
+        var y = "Tanisha";
+        var z = 15;
+        var a = 33;
+        var v = 48;
+        document.write(x);
+        document.write(y);
+        document.write(typeof y);
+        document.write(x + a + z);
+        document.write(a + z * (v));
+    </script>
+    <!-- Assignment operator -->
+    <h1>Assignment Operators practice</h1>
+    <script>
+        a = 12;
+        b = 8;
+        c = 78;
+        a = a + b;
+        b = b - c;
+        a = a * b;
+        document.write(b);
+    </script>
+    <!-- comparison operators -->
+    <h1>Comparison Operator</h1>
+    <script>
+        var a = 13;
+        var b = 10;
+        console.log(a != b);
+        console.log(a == b);
+        console.log(a >= b);
+        console.log(a !== b); 
+    </script>
+    <h1>If statement</h1>
+    <script>
+        var a = 10;
+        var b = 20;
+        if (a !== b) {
+            document.write("great");
+        }
+    </script>
+    <script>
+        var a = 10;
+        var b = 20;
+        if (a < b) {
+            document.write("happy");
+        }
+    </script>
+    <script>
+        var a = 10;
+        var b = "20";
+        if (a === b) {
+            document.write("happy");
+        }
+    </script>
+    <h1>Logical operator</h1>
+    <h2>&& operator</h2>
+    <script>
+        var a = 23;
+        // && both the conditions should be true or satisfies
+        if (a >= 10 && a <= 30) {
+            document.write("Good to Go")
+
+        }
+    </script>
+    <h1>|| opeartor</h1>
+    <script>
+        var a = 23;
+        // || atleast one condition should be true or statisfie
+
+        if (a >= 10 || a <= 20) {
+            document.write("Atleast one")
+        }
+    </script>
+    <h1>! operator</h1>
+    <script>
+        // It will give opposite of the answer
+        var a = 21;
+        var c = 21;
+        if (!a == c) {
+            document.write(
+                "Whatever"
+            )
+
+        }
+
+    </script>
+    <h1>If else if</h1>
+    <script>
+        var per = 55;
+        if (per >= 80 && per <= 99) {
+            document.write("you are in merit class");
+        }
+        else if(per>=70 && per<=65){
+            document.write("1stclass");
+        }
+        else{
+            document.write("wtf!")
+        }
+
+
+    </script>
+</body>
+
+</html>

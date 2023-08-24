@@ -1,0 +1,45 @@
+#header{
+    width:100%;
+    height: 60px;
+    
+}
+h1{
+    color:red;
+}
+#icon{
+    float:left;
+
+}
+#social{
+    float:right;
+}
+.fa-brands{
+    margin:5px;
+    font-size:50px;
+}
+
+
+
+#search{
+    width: 106%;
+    height: 589px;
+    background-image: url(image.png);
+    background-size: 98% 550px;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+#logo{
+    font-size: 90px;
+    width: 150px;
+    height: 150px;
+    margin-left: 46%;
+    color: aliceblue;
+    background-color: crimson;
+    padding-bottom: 4px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 5%;
+}
+#logo>span{
+    margin-left:36px ;
+}

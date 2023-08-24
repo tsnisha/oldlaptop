@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light & Dark Theme demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        const changeMode=()=>{
+            let mybody = document.body;
+            mybody.classList.toggle("mystyle");
+        };
+    </script>
+    <style>
+        h2{
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: crimson;
+            text-align: center;
+        }
+        body{
+            background-color: antiquewhite;
+            color: black;
+        }
+        .mystyle{
+            background-color: black;
+            color:wheat;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Light Dark mode</h2>
+<div class="container">
+    <p>Click here to change mode</p>
+    <span class="glyphicon glyphicon-off" onClick="changeMode()"></span>
+</div>
+
+</body>
+
+</html>

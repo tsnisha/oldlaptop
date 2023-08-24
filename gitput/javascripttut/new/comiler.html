@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+        body {
+            background: #0a0a23;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        #shift {
+            float: right;
+
+        }
+
+        input {
+            background-color: #fff;
+            border-radius: 5px;
+            color: black;
+            padding: 13px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 1px 2px;
+            cursor: pointer;
+        }
+
+        #textArea2 {
+            float: right;
+
+
+        }
+
+        #container {
+            float: left;
+
+
+        }
+
+        #container2 {
+            float: right;
+
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            background-color: cornflowerblue;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        #textArea {
+            background-color: rgb(239, 225, 207);
+            box-sizing: border-box;
+            border: 2px solid #eb9e9e;
+            border-radius: 5px;
+
+        }
+
+        #textAreaB {
+            background-color: rgb(5, 4, 1);
+            box-sizing: border-box;
+            border: 2px solid #eb9e9e;
+            border-radius: 5px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Online Compiler</h1>
+    </center>
+
+    <br>
+
+    
+        <div id="shift">
+
+            <label for="language">Select a Programming Language:</label>
+            <select name="language" id="language">
+                <form action="{{ url_for('success') }}" method="POST">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+                <option value="java" selected>Java</option>
+
+            </select>
+            <input type='submit' />
+
+    </form>
+    </div>
+    <div id="container">
+        <form action="{{ url_for('create_python_file') }}" method="post">
+            <center><label>SourceCode</label></center>
+        </form>
+        <textarea onkeyup="run()" name="code" rows="26" cols="80" spellcheck="false" font-size="0.8rem"
+            id="textArea"></textarea>
+    </div>
+    <div id="container2">
+        
+        <center> <label>Output:</label></center>
+
+        <textarea id="textAreaB" rows="21" cols="74" spellcheck="false" font-size="0.8rem" placeholder=""
+            </textarea>
+
+    </div>
+
+    </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        color: crimson;
+        }
+        body{
+            background-color: rgb(198, 240, 248);
+        }
+        button{
+            color: blue;/
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Event Registration</legend>
+    <form >
+        <label for="name">Name:</label>
+        <br/>
+        <input type="text" name="name" id="name">
+        <br/>
+        <label for="dob">Date of Birth:</label>
+        <br/>
+        <input type="date" name="dob" id="dob">
+        <br/>
+        <label for="email">Email:</label>
+        <br/>
+        <input type="text" name="email" id="email">
+        <br/>
+        <label for="phone">Phone No:</label>
+        <br/>
+        <input type="tel" name="phone" id="phone">
+        <br/>
+        
+        <label for="occu">Occupation</label>
+        <select name="dropdown" id="occu">
+        <option value="Student">Student</option>
+        <option value="Fresher">Fresher</option>
+        <option value="Other">Other</option>
+    </select>
+    <br/>
+    <br/>
+    <label for="upload">Upload Resume</label>
+    <br/>
+    <input type="file" name="up" id="upload">
+    <br/>
+    <br/>
+    <fieldset>
+        <legend>Topic Of Interest</legend>
+        <label for="cb1">HTML</label>
+        <input type="checkbox" name="cb1" id="cb1">
+        <label for="cb2">CSS</label>
+        <input type="checkbox" name="cb2" id="cb2">
+        <label for="cb3">JS</label>
+        <input type="checkbox" name="cb3" id="cb3">
+    </fieldset>
+    <br/>
+    <label for="exp">Experience</label>
+    <br/>
+    <input type="number" name="counter" id="num" max="4" min="0">
+    <br/>
+    <br/>
+    <label for="textarea">Comments:</label>
+    <br/>
+    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    <br/>
+    <button>Submit</button>
+    </form>
+</fieldset>
+</body>
+</html>
